@@ -1,3 +1,10 @@
+let userNumber = document.getElementById("getNumber");
+userNumber.addEventListener("keydown", function (e) {
+    if (e.keycode == 13) {
+        start(e);
+    }
+})
+
 function start() {
     startBase = document.getElementById("paragraph");
     startBase.innerHTML = "Hello World!";
@@ -6,7 +13,7 @@ function start() {
     startBase.style.padding = "20px";
     randNum();
     userNum();
-    compNumb();
+    compNum();
 }
 
 function randNum() {
